@@ -1,9 +1,9 @@
 director_name,actor_1_name,actor_2_name,actor_3_name,genres,movie_title,comb,rating,date,time,user,vote_count
-James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,6.0,26-05-2022,18:03:30,Sonu Sharma,13.0
+James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,5.642857142857143,26-05-2022,20:24:23,,14.0
 Gore Verbinski,Johnny Depp,Orlando Bloom,Jack Davenport,Action Adventure Fantasy,pirates of the caribbean: at world's end,Johnny Depp Orlando Bloom Jack Davenport Gore Verbinski Action Adventure Fantasy,7.0,26-05-2022,17:47:19,Rahul Sharma,5.0
-Sam Mendes,Christoph Waltz,Rory Kinnear,Stephanie Sigman,Action Adventure Thriller,spectre,Christoph Waltz Rory Kinnear Stephanie Sigman Sam Mendes Action Adventure Thriller,6.0,26-05-2022,19:13:44,Monu sharma,6.0
+Sam Mendes,Christoph Waltz,Rory Kinnear,Stephanie Sigman,Action Adventure Thriller,spectre,Christoph Waltz Rory Kinnear Stephanie Sigman Sam Mendes Action Adventure Thriller,5.714285714285714,26-05-2022,23:34:16,Rahul Sharma,7.0
 Christopher Nolan,Tom Hardy,Christian Bale,Joseph Gordon-Levitt,Action Thriller,the dark knight rises,Tom Hardy Christian Bale Joseph Gordon-Levitt Christopher Nolan Action Thriller,,,,,
-Doug Walker,Doug Walker,Rob Walker,unknown,Documentary,star wars: episode vii - the force awakens            ,Doug Walker Rob Walker unknown Doug Walker Documentary,9.0,26-05-2022,19:40:07,Ratan Sharma,1.0
+Doug Walker,Doug Walker,Rob Walker,unknown,Documentary,star wars: episode vii - the force awakens            ,Doug Walker Rob Walker unknown Doug Walker Documentary,7.0,26-05-2022,20:18:00,Rahul Sharma,2.0
 Andrew Stanton,Daryl Sabara,Samantha Morton,Polly Walker,Action Adventure Sci-Fi,john carter,Daryl Sabara Samantha Morton Polly Walker Andrew Stanton Action Adventure Sci-Fi,7.0,26-05-2022,17:54:01,Sonu Sharma,
 Sam Raimi,J.K. Simmons,James Franco,Kirsten Dunst,Action Adventure Romance,spider-man 3,J.K. Simmons James Franco Kirsten Dunst Sam Raimi Action Adventure Romance,,,,,
 Nathan Greno,Brad Garrett,Donna Murphy,M.C. Gainey,Adventure Animation Comedy Family Fantasy Musical Romance,tangled,Brad Garrett Donna Murphy M.C. Gainey Nathan Greno Adventure Animation Comedy Family Fantasy Musical Romance,,,,,
@@ -13,7 +13,7 @@ Zack Snyder,Henry Cavill,Lauren Cohan,Alan D. Purwin,Action Adventure Sci-Fi,bat
 Bryan Singer,Kevin Spacey,Marlon Brando,Frank Langella,Action Adventure Sci-Fi,superman returns,Kevin Spacey Marlon Brando Frank Langella Bryan Singer Action Adventure Sci-Fi,,,,,
 Marc Forster,Giancarlo Giannini,Mathieu Amalric,Rory Kinnear,Action Adventure,quantum of solace,Giancarlo Giannini Mathieu Amalric Rory Kinnear Marc Forster Action Adventure,7.0,26-05-2022,19:14:38,Rahul sharma,1.0
 Gore Verbinski,Johnny Depp,Orlando Bloom,Jack Davenport,Action Adventure Fantasy,pirates of the caribbean: dead man's chest,Johnny Depp Orlando Bloom Jack Davenport Gore Verbinski Action Adventure Fantasy,,,,,
-Gore Verbinski,Johnny Depp,Ruth Wilson,Tom Wilkinson,Action Adventure Western,the lone ranger,Johnny Depp Ruth Wilson Tom Wilkinson Gore Verbinski Action Adventure Western,,,,,
+Gore Verbinski,Johnny Depp,Ruth Wilson,Tom Wilkinson,Action Adventure Western,the lone ranger,Johnny Depp Ruth Wilson Tom Wilkinson Gore Verbinski Action Adventure Western,8.0,26-05-2022,20:19:39,Rahul Sharma,1.0
 Zack Snyder,Henry Cavill,Christopher Meloni,Harry Lennix,Action Adventure Fantasy Sci-Fi,man of steel,Henry Cavill Christopher Meloni Harry Lennix Zack Snyder Action Adventure Fantasy Sci-Fi,7.0,26-05-2022,18:20:53,Sonu Sharma,
 Andrew Adamson,Peter Dinklage,Pierfrancesco Favino,Damián Alcázar,Action Adventure Family Fantasy,the chronicles of narnia: prince caspian,Peter Dinklage Pierfrancesco Favino Damián Alcázar Andrew Adamson Action Adventure Family Fantasy,,,,,
 Joss Whedon,Chris Hemsworth,Robert Downey Jr.,Scarlett Johansson,Action Adventure Sci-Fi,the avengers,Chris Hemsworth Robert Downey Jr. Scarlett Johansson Joss Whedon Action Adventure Sci-Fi,,,,,

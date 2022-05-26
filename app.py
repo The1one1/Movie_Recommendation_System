@@ -1,19 +1,18 @@
-from cmath import nan
-import csv
-import datetime
-from time import time
-from matplotlib.pyplot import step
-from numpy import NaN
 from sklearn.feature_extraction.text import CountVectorizer
-# from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics.pairwise import linear_kernel
 
 from tmdbv3api import Movie, TMDb
 
 import streamlit as st
-import numpy as np
+from time import time
+
 import pandas as pd
+import numpy as np
+
+import datetime
 import requests
+
+# from sklearn.metrics.pairwise import cosine_similarity
 
 
 tmdb = TMDb()
@@ -224,30 +223,26 @@ elif output == "Popular":
 elif output == "Top Rated":
     title('Top Rated')
 
-    if st.button("Get Top Rated Movies"):
-        movie = Movie()
-        top_rated_movies = movie.top_rated()
-        movie_list = []
+    movie = Movie()
+    top_rated_movies = movie.top_rated()
+    movie_list = []
 
-        for i in range(len(top_rated_movies)):
-            movie_list.append(top_rated_movies[i].title)
+    for i in range(len(top_rated_movies)):
+        movie_list.append(top_rated_movies[i].title)
 
-        st.header("Top Rated Movies")
-        movie_details(movie_list)
+    movie_details(movie_list)
 
 
 elif output == "Recently Released":
     title('Recently Released')
 
-    if st.button("Movies"):
-        movie = Movie()
-        upcoming_movies = movie.upcoming()
-        movie_list = []
-        for i in range(len(upcoming_movies)):
-            movie_list.append(upcoming_movies[i].title)
+    movie = Movie()
+    upcoming_movies = movie.upcoming()
+    movie_list = []
+    for i in range(len(upcoming_movies)):
+        movie_list.append(upcoming_movies[i].title)
 
-        st.header("Recently Released Movies")
-        movie_details(movie_list)
+    movie_details(movie_list)
 
 
 elif output == "Rate the Movie":
