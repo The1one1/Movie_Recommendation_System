@@ -209,6 +209,7 @@ elif output == "Popular":
         if len(recommendations) == 0:
             # if no movie is found
             st.error("No recommendations found")
+            st.sidebar.error("No recommendations found")
         else:
             # if movie is found then get the posters then display in sidebar
             posters = get_posters(recommendations)
