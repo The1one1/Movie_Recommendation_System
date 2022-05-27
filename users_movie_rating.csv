@@ -1,10 +1,10 @@
 director_name,actor_1_name,actor_2_name,actor_3_name,genres,movie_title,comb,rating,date,time,user,vote_count
-James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,5.5,27-05-2022,18:23:26,Rahul,16.0
+James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,5.411764705882353,27-05-2022,20:38:27,Rahul Sharma,17.0
 Gore Verbinski,Johnny Depp,Orlando Bloom,Jack Davenport,Action Adventure Fantasy,pirates of the caribbean: at world's end,Johnny Depp Orlando Bloom Jack Davenport Gore Verbinski Action Adventure Fantasy,6.666666666666667,27-05-2022,14:51:28,Monu sharma,6.0
 Sam Mendes,Christoph Waltz,Rory Kinnear,Stephanie Sigman,Action Adventure Thriller,spectre,Christoph Waltz Rory Kinnear Stephanie Sigman Sam Mendes Action Adventure Thriller,5.384615384615385,27-05-2022,10:10:06,Rahul Sharma,13.0
-Christopher Nolan,Tom Hardy,Christian Bale,Joseph Gordon-Levitt,Action Thriller,the dark knight rises,Tom Hardy Christian Bale Joseph Gordon-Levitt Christopher Nolan Action Thriller,,,,,
+Christopher Nolan,Tom Hardy,Christian Bale,Joseph Gordon-Levitt,Action Thriller,the dark knight rises,Tom Hardy Christian Bale Joseph Gordon-Levitt Christopher Nolan Action Thriller,9.0,27-05-2022,20:44:29,Rahul Sharma,1.0
 Doug Walker,Doug Walker,Rob Walker,unknown,Documentary,star wars: episode vii - the force awakens            ,Doug Walker Rob Walker unknown Doug Walker Documentary,7.0,26-05-2022,20:18:00,Rahul Sharma,2.0
-Andrew Stanton,Daryl Sabara,Samantha Morton,Polly Walker,Action Adventure Sci-Fi,john carter,Daryl Sabara Samantha Morton Polly Walker Andrew Stanton Action Adventure Sci-Fi,7.0,26-05-2022,17:54:01,Sonu Sharma,
+Andrew Stanton,Daryl Sabara,Samantha Morton,Polly Walker,Action Adventure Sci-Fi,john carter,Daryl Sabara Samantha Morton Polly Walker Andrew Stanton Action Adventure Sci-Fi,4.0,27-05-2022,20:44:42,Rahul Sharma,2.0
 Sam Raimi,J.K. Simmons,James Franco,Kirsten Dunst,Action Adventure Romance,spider-man 3,J.K. Simmons James Franco Kirsten Dunst Sam Raimi Action Adventure Romance,,,,,
 Nathan Greno,Brad Garrett,Donna Murphy,M.C. Gainey,Adventure Animation Comedy Family Fantasy Musical Romance,tangled,Brad Garrett Donna Murphy M.C. Gainey Nathan Greno Adventure Animation Comedy Family Fantasy Musical Romance,,,,,
 Joss Whedon,Chris Hemsworth,Robert Downey Jr.,Scarlett Johansson,Action Adventure Sci-Fi,avengers: age of ultron,Chris Hemsworth Robert Downey Jr. Scarlett Johansson Joss Whedon Action Adventure Sci-Fi,,,,,
@@ -76,7 +76,7 @@ David Ayer,Will Smith,Robin Atkin Downes,Ike Barinholtz,Action Adventure Comedy 
 Tom Shadyac,Jimmy Bennett,Morgan Freeman,Steve Carell,Comedy Family Fantasy,evan almighty,Jimmy Bennett Morgan Freeman Steve Carell Tom Shadyac Comedy Family Fantasy,,,,,
 Doug Liman,Tom Cruise,Lara Pulver,Noah Taylor,Action Adventure Sci-Fi,edge of tomorrow,Tom Cruise Lara Pulver Noah Taylor Doug Liman Action Adventure Sci-Fi,,,,,
 Kevin Reynolds,Jeanne Tripplehorn,Rick Aviles,Zakes Mokae,Action Adventure Sci-Fi Thriller,waterworld,Jeanne Tripplehorn Rick Aviles Zakes Mokae Kevin Reynolds Action Adventure Sci-Fi Thriller,,,,,
-Stephen Sommers,Joseph Gordon-Levitt,Dennis Quaid,Leo Howard,Action Adventure Sci-Fi Thriller,g.i. joe: the rise of cobra,Joseph Gordon-Levitt Dennis Quaid Leo Howard Stephen Sommers Action Adventure Sci-Fi Thriller,,,,,
+Stephen Sommers,Joseph Gordon-Levitt,Dennis Quaid,Leo Howard,Action Adventure Sci-Fi Thriller,g.i. joe: the rise of cobra,Joseph Gordon-Levitt Dennis Quaid Leo Howard Stephen Sommers Action Adventure Sci-Fi Thriller,7.0,27-05-2022,20:46:21,Rahul Sharma,1.0
 Pete Docter,Amy Poehler,Mindy Kaling,Phyllis Smith,Adventure Animation Comedy Drama Family Fantasy,inside out,Amy Poehler Mindy Kaling Phyllis Smith Pete Docter Adventure Animation Comedy Drama Family Fantasy,,,,,
 Jon Favreau,Scarlett Johansson,Bill Murray,Garry Shandling,Adventure Drama Family Fantasy,the jungle book,Scarlett Johansson Bill Murray Garry Shandling Jon Favreau Adventure Drama Family Fantasy,,,,,
 Jon Favreau,Robert Downey Jr.,Scarlett Johansson,Jon Favreau,Action Adventure Sci-Fi,iron man 2,Robert Downey Jr. Scarlett Johansson Jon Favreau Jon Favreau Action Adventure Sci-Fi,,,,,

@@ -95,8 +95,11 @@ elif output == "Recently Released":
 
 elif output == "Rate the Movie":
 
+    data = pd.read_csv("users_movie_rating.csv")
     movie_name = second.title('Rate the Movie')
     st.subheader("Rating of the movie: " + movie_name)
+
+    second.movie_current_rating(movie_name, data)
 
     # slider to get the rating of the movie
     rating = st.slider("Rate the movie", 1, 10)
@@ -111,7 +114,6 @@ elif output == "Rate the Movie":
     user = st.text_input("Enter your name:")
 
     if st.button("Rate"):
-        data = pd.read_csv("users_movie_rating.csv")
 
         # add the data to particular row and particular column of csv file
         for i in range(len(data)):
@@ -137,6 +139,7 @@ elif output == "Rate the Movie":
                 break
 
         second.success_message(data, movie_name)
+
 
 
 

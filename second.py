@@ -3,6 +3,7 @@ from sklearn.metrics.pairwise import linear_kernel
 from tmdbv3api import Movie, TMDb
 import streamlit as st
 import pandas as pd
+import numpy as np
 
 import Converter
 import requests
@@ -162,3 +163,17 @@ def avg_rating(data, rating, i):
 
     # average of rating
     return total_rating / (data['vote_count'].values[i] + 1.0)
+
+
+def movie_current_rating(movie_name, data):
+    # show rating of the movie movie_name in same line
+
+    if np.isnan(data[data["movie_title"] == movie_name]["rating"].values[0]):
+        st.write("Current Rating = ", "Not Rated")
+    else:
+        st.write("Current Rating = ", data[data["movie_title"] == movie_name]["rating"].values[0])
+
+    if np.isnan(data[data["movie_title"] == movie_name]["vote_count"].values[0]):
+        st.write("No of Votes = ", 0)
+    else:
+        st.write("No of Votes = ", data[data["movie_title"] == movie_name]["vote_count"].values[0])
