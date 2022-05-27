@@ -1,3 +1,5 @@
+from ast import Pass
+import operator
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -22,7 +24,7 @@ data = pd.read_csv("movie_data.csv")
 
 
 def title(nevigation):
-    
+
     if nevigation == 'Movie':
         st.title('Movie Recommender')
         return st.selectbox("Enter the movie:(Release till 2016)", data["movie_title"].values)
@@ -87,7 +89,7 @@ def ListOfGenres(genre_json):
 
 def date_convert(s):
     MONTHS = ['January', 'February', 'Match', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December']
+              'July', 'August', 'September', 'October', 'November', 'December']
     y = s[:4]
     m = int(s[5:-3])
     d = s[8:]
@@ -162,7 +164,8 @@ def movie_details(recommendations):
             st.write("Runtime: "+runtime)
 
 
-output = st.sidebar.radio("Nevigation", ["Movie", "Popular", "Top Rated", "Recently Released", "Rate the Movie"])
+output = st.sidebar.radio("Nevigation", [
+                          "Movie", "Popular", "Top Rated", "Recently Released", "Rate the Movie"])
 
 if output == "Movie":
     # to take input(movie name) from user
@@ -191,7 +194,7 @@ elif output == "Popular":
 
     # get popular movies on the basis of genre
     genre = st.sidebar.selectbox("Select Genre", ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family",
-                                                "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
+                                                  "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
 
     genre_id = {"Action": 28, "Adventure": 12, "Animation": 16, "Comedy": 35, "Crime": 80, "Documentary": 99, "Drama": 18, "Family": 10751, "Fantasy": 14, "History": 36,
                 "Horror": 27, "Music": 10402, "Mystery": 9648, "Romance": 10749, "Science Fiction": 878, "TV Movie": 10770, "Thriller": 53, "War": 10752, "Western": 37}
@@ -282,7 +285,8 @@ elif output == "Rate the Movie":
                     data['vote_count'].values[i] = 0.0
 
                 # average of rating
-                x = ((data["rating"].values[i] * data['vote_count'].values[i]) + float(rating)) / (data['vote_count'].values[i] + 1.0)
+                x = ((data["rating"].values[i] * data['vote_count'].values[i]
+                      ) + float(rating)) / (data['vote_count'].values[i] + 1.0)
 
                 data["rating"].values[i] = x
                 data["date"].values[i] = date
@@ -301,7 +305,40 @@ elif output == "Rate the Movie":
         # to display the rating of the movie in sidebar
         st.sidebar.subheader("Movie: " + movie_name)
         # show rating of the movie movie_name
-        st.sidebar.write("Rating = ", data[data["movie_title"] == movie_name]["rating"].values[0])
+        st.sidebar.write(
+            "Rating = ", data[data["movie_title"] == movie_name]["rating"].values[0])
 
         # no of votes of the movie movie_name
-        st.sidebar.write("No of Votes = ", int(data[data["movie_title"] == movie_name]["vote_count"].values[0]))
+        st.sidebar.write("No of Votes = ", int(
+            data[data["movie_title"] == movie_name]["vote_count"].values[0]))
+
+
+
+# I want to display the top rated movies from the my database csv files but now 
+# sufficient votes has given to the movies.
+# Once each movie get enough votes then it will be displayed in the top rated movies section from app database.
+# till now the movies are not displayed in the top rated movies section from the databse of tmdb .
+
+
+# tp rated movies from users_movie_rating.csv
+# def top_rated_movies():
+#     data = pd.read_csv("users_movie_rating.csv")
+#     movie_list = {}
+#     for i in range(len(data)):
+#         # append movies title with movie rating
+#         if np.isnan(data["rating"].values[i]):
+#             continue
+#         movie_list[data["movie_title"].values[i]] = data["rating"].values[i]
+#         if len(movie_list) == 10:
+#             break
+
+#     # sort the movies based on rating in ascending order
+#     sorted_movie_list = sorted(movie_list.items(), key=operator.itemgetter(1), reverse=True)
+#     return sorted_movie_list
+
+
+# # to print the top rated movies in table form
+# if st.button("Top Rated Movies"):
+#     st.subheader("According to app users Top Rated Movies")
+#     sorted_movie_list = top_rated_movies()
+#     st.table(pd.DataFrame(sorted_movie_list, columns=["Movie", "Rating"]).style.set_caption("Top Rated Movies"))
