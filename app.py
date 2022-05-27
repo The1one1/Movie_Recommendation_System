@@ -22,6 +22,7 @@ data = pd.read_csv("movie_data.csv")
 
 
 def title(nevigation):
+    
     if nevigation == 'Movie':
         st.title('Movie Recommender')
         return st.selectbox("Enter the movie:(Release till 2016)", data["movie_title"].values)
@@ -85,7 +86,8 @@ def ListOfGenres(genre_json):
 
 
 def date_convert(s):
-    MONTHS = ['January', 'February', 'Match', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    MONTHS = ['January', 'February', 'Match', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December']
     y = s[:4]
     m = int(s[5:-3])
     d = s[8:]
@@ -173,7 +175,7 @@ if output == "Movie":
         list = []
         list.append(selected_movie_name)
         # it will show the selected movie details
-        movie_details(list)     
+        movie_details(list)
 
         # to display the Poster of recommended movies in sidebar
         st.sidebar.subheader("Recommendations")
@@ -248,7 +250,6 @@ elif output == "Recently Released":
 elif output == "Rate the Movie":
 
     movie_name = title('Rate the Movie')
-
     st.subheader("Rating of the movie: " + movie_name)
 
     # slider to get the rating of the movie
@@ -280,6 +281,7 @@ elif output == "Rate the Movie":
                 if np.isnan(data['vote_count'].values[i]):
                     data['vote_count'].values[i] = 0.0
 
+                # average of rating
                 x = ((data["rating"].values[i] * data['vote_count'].values[i]) + float(rating)) / (data['vote_count'].values[i] + 1.0)
 
                 data["rating"].values[i] = x
@@ -295,7 +297,6 @@ elif output == "Rate the Movie":
         st.success("Data Submitted")
         st.write("Thanks for rating the movie")
         st.write("Your contribution will help us to improve our app")
-
 
         # to display the rating of the movie in sidebar
         st.sidebar.subheader("Movie: " + movie_name)
