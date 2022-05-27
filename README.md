@@ -34,3 +34,8 @@ If you are asked for the website URL, just give "NA" if you don't have one. You 
 - Run **``` streamlit run app.py ```** inside **``` \movie-recommendation-system-master ```** directory to run the project
 - Enjoy !
 
+## Resource
+- [Getting Started with a Movie Recommendation System](https://www.kaggle.com/code/ibtesama/getting-started-with-a-movie-recommendation-system#Content-Based-Filtering)
+- [Natural Language Processing](https://medium.com/artificial-coder/count-vectorizers-vs-tfidf-vectorizers-natural-language-processing-b5371f51a40c)
+- Scikit Learn 
+- [Streamlit](https://youtube.com/playlist?list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5)
