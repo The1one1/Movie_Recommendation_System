@@ -13,7 +13,7 @@ https://share.streamlit.io/the1one1/movie_recommendation_system/app.py
 **Numpy**<br>
 **Scikit Learn**<br>
 **Python Framework [Streamlit](https://streamlit.io/)<br>**
-**[IMDb]( https://www.themoviedb.org/) API Key**
+**[TMDb]( https://www.themoviedb.org/) API Key**
 
 ## Following functionalities can be performed by the user: <br>
 • **Select the movie and it will Recommend all the related movies**<br>
