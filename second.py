@@ -1,9 +1,9 @@
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 from tmdbv3api import Movie, TMDb
 import streamlit as st
 import pandas as pd
-import numpy as np
 
 import Converter
 import requests
@@ -133,7 +133,7 @@ def recommend(m):
 
 def get_genre():
     genre = st.sidebar.selectbox("Select Genre", ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family",
-                                                  "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
+                "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
     return genre
 
 
@@ -163,6 +163,29 @@ def avg_rating(data, rating, i):
 
     # average of rating
     return total_rating / (data['vote_count'].values[i] + 1.0)
+
+
+# select the genre of the movie from the database
+def movie_genre(movie_genre, data):
+
+    genre = data["genres"]
+    movie_names = data["movie_title"]
+    genre_list = genre.str.split(' ')
+    # remove empty string's from genre_list
+    genre_list = genre_list.apply(lambda x: [i for i in x if i != ''])
+
+    # dictionary of genre and movie names
+    genre_dict = dict(zip(movie_names, genre_list))
+
+    recommendation = []
+
+    for key, value in genre_dict.items():
+        if movie_genre in value:
+            recommendation.append(key)
+        if len(recommendation) > 15:
+            break
+
+    return recommendation
 
 
 def movie_current_rating(movie_name, data):
