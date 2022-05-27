@@ -9,6 +9,9 @@ Select to Open
 https://share.streamlit.io/the1one1/movie_recommendation_system/app.py
 
 ## Tech Used
+**Pandas<br>**
+**Numpy**<br>
+**Scikit Learn**<br>
 **Python Framework [Streamlit](https://streamlit.io/)<br>**
 **[IMDb]( https://www.themoviedb.org/) API Key**
 
