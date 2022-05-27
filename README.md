@@ -4,9 +4,20 @@ It is the Content Based Recommender System that recommends movies similar to the
 
 In this recommender system the content of the movie (overview, cast, crew, keyword, tagline etc) is used to find its similarity with other movies. Then the movies that are most likely to be similar are recommended.
 
-## Tech Stack
+# App link
+Select to Open
+https://share.streamlit.io/the1one1/movie_recommendation_system/app.py
+
+## Tech Used
 **Python Framework [Streamlit](https://streamlit.io/)<br>**
 **[IMDb]( https://www.themoviedb.org/) API Key**
+
+## Following functionalities can be performed by the user: <br>
+• **Select the movie and it will Recommend all the related movies**<br>
+• **Find movies according to genre**<br>
+• **Top rated movies** <br>
+• **Recently Released movies.** <br>
+. **Give Rating to the movie.**
 ## How to get the API key?
 
 Create an account in https://www.themoviedb.org/ 
@@ -15,13 +26,6 @@ click on the API link from the left hand sidebar in your account settings and fi
 
 If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key in your API sidebar once your request is approved.
 
-
-### Following functionalities can be performed by the user: <br>
-• **Select the movie and it will Recommend all the related movies**<br>
-• **Find movies according to genre**<br>
-• **Top rated movies** <br>
-• **Recently Released movies.** <br>
-. **Give Rating to the movie.**
 
 ## How To Run ?
 - clone it on your computer
