@@ -99,8 +99,10 @@ elif output == "Rate the Movie":
     movie_name = second.title('Rate the Movie')
     st.subheader("Rating of the movie: " + movie_name)
 
-    second.movie_current_rating(movie_name, data)
-
+    try:
+        second.movie_current_rating(movie_name, data)
+    except:
+        pass
     # slider to get the rating of the movie
     rating = st.slider("Rate the movie", 1, 10)
 

@@ -133,7 +133,7 @@ def recommend(m):
 
 def get_genre():
     genre = st.sidebar.selectbox("Select Genre", ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family",
-        "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
+                                                  "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
     return genre
 
 
@@ -171,9 +171,11 @@ def movie_current_rating(movie_name, data):
     if np.isnan(data[data["movie_title"] == movie_name]["rating"].values[0]):
         st.write("Current Rating = ", "Not Rated")
     else:
-        st.write("Current Rating = ", data[data["movie_title"] == movie_name]["rating"].values[0])
+        st.write("Current Rating = ",
+                data[data["movie_title"] == movie_name]["rating"].values[0])
 
     if np.isnan(data[data["movie_title"] == movie_name]["vote_count"].values[0]):
         st.write("No of Votes = ", 0)
     else:
-        st.write("No of Votes = ", data[data["movie_title"] == movie_name]["vote_count"].values[0])
+        st.write("No of Votes = ",
+                data[data["movie_title"] == movie_name]["vote_count"].values[0])
