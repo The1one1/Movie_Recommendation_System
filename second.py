@@ -172,7 +172,7 @@ def movie_genre(movie_genre, data):
     movie_names = data["movie_title"]
     genre_list = genre.str.split(' ')
     # remove empty string's from genre_list
-    genre_list = genre_list.apply(lambda x: [i for i in x if i != ''])
+    # genre_list = genre_list.apply(lambda x: [i for i in x if i != ''])
 
     # dictionary of genre and movie names
     genre_dict = dict(zip(movie_names, genre_list))
