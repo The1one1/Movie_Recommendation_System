@@ -1,6 +1,6 @@
 director_name,actor_1_name,actor_2_name,actor_3_name,genres,movie_title,comb,rating,date,time,user,vote_count
-James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,5.642857142857143,26-05-2022,20:24:23,,14.0
-Gore Verbinski,Johnny Depp,Orlando Bloom,Jack Davenport,Action Adventure Fantasy,pirates of the caribbean: at world's end,Johnny Depp Orlando Bloom Jack Davenport Gore Verbinski Action Adventure Fantasy,7.0,26-05-2022,17:47:19,Rahul Sharma,5.0
+James Cameron,CCH Pounder,Joel David Moore,Wes Studi,Action Adventure Fantasy Sci-Fi,avatar,CCH Pounder Joel David Moore Wes Studi James Cameron Action Adventure Fantasy Sci-Fi,5.5,27-05-2022,18:23:26,Rahul,16.0
+Gore Verbinski,Johnny Depp,Orlando Bloom,Jack Davenport,Action Adventure Fantasy,pirates of the caribbean: at world's end,Johnny Depp Orlando Bloom Jack Davenport Gore Verbinski Action Adventure Fantasy,6.666666666666667,27-05-2022,14:51:28,Monu sharma,6.0
 Sam Mendes,Christoph Waltz,Rory Kinnear,Stephanie Sigman,Action Adventure Thriller,spectre,Christoph Waltz Rory Kinnear Stephanie Sigman Sam Mendes Action Adventure Thriller,5.384615384615385,27-05-2022,10:10:06,Rahul Sharma,13.0
 Christopher Nolan,Tom Hardy,Christian Bale,Joseph Gordon-Levitt,Action Thriller,the dark knight rises,Tom Hardy Christian Bale Joseph Gordon-Levitt Christopher Nolan Action Thriller,,,,,
 Doug Walker,Doug Walker,Rob Walker,unknown,Documentary,star wars: episode vii - the force awakens            ,Doug Walker Rob Walker unknown Doug Walker Documentary,7.0,26-05-2022,20:18:00,Rahul Sharma,2.0
@@ -94,7 +94,7 @@ Robert Zemeckis,Tom Hanks,Eddie Deezen,Peter Scolari,Adventure Animation Family 
 Roland Emmerich,Vivica A. Fox,Sela Ward,Judd Hirsch,Action Adventure Sci-Fi,independence day: resurgence,Vivica A. Fox Sela Ward Judd Hirsch Roland Emmerich Action Adventure Sci-Fi,,,,,
 Dean DeBlois,Gerard Butler,America Ferrera,Craig Ferguson,Adventure Animation Family Fantasy,how to train your dragon,Gerard Butler America Ferrera Craig Ferguson Dean DeBlois Adventure Animation Family Fantasy,,,,,
 Jonathan Mostow,Nick Stahl,M.C. Gainey,Carolyn Hennesy,Action Sci-Fi,terminator 3: rise of the machines,Nick Stahl M.C. Gainey Carolyn Hennesy Jonathan Mostow Action Sci-Fi,,,,,
-James Gunn,Bradley Cooper,Vin Diesel,Djimon Hounsou,Action Adventure Sci-Fi,guardians of the galaxy,Bradley Cooper Vin Diesel Djimon Hounsou James Gunn Action Adventure Sci-Fi,,,,,
+James Gunn,Bradley Cooper,Vin Diesel,Djimon Hounsou,Action Adventure Sci-Fi,guardians of the galaxy,Bradley Cooper Vin Diesel Djimon Hounsou James Gunn Action Adventure Sci-Fi,6.0,27-05-2022,19:30:03,Monu sharma,1.0
 Christopher Nolan,Matthew McConaughey,Anne Hathaway,Mackenzie Foy,Adventure Drama Sci-Fi,interstellar,Matthew McConaughey Anne Hathaway Mackenzie Foy Christopher Nolan Adventure Drama Sci-Fi,,,,,
 Christopher Nolan,Leonardo DiCaprio,Tom Hardy,Joseph Gordon-Levitt,Action Adventure Sci-Fi Thriller,inception,Leonardo DiCaprio Tom Hardy Joseph Gordon-Levitt Christopher Nolan Action Adventure Sci-Fi Thriller,,,,,
 Hideaki Anno,Mark Chinnery,Shin'ya Tsukamoto,Atsuko Maeda,Action Adventure Drama Horror Sci-Fi,godzilla resurgence,Mark Chinnery Shin'ya Tsukamoto Atsuko Maeda Hideaki Anno Action Adventure Drama Horror Sci-Fi,,,,,
