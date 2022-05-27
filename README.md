@@ -31,6 +31,6 @@ If you are asked for the website URL, just give "NA" if you don't have one. You 
 - clone it on your computer
 - make a separate [python virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) or use the default one already installed on your machine
 - run **``` pip install -r requirements.txt inside \movie-recommendation-system-master ```** directory
-- Run **``` stramlit run app.py ```** inside **``` \movie-recommendation-system-master ```** directory to run the project
+- Run **``` streamlit run app.py ```** inside **``` \movie-recommendation-system-master ```** directory to run the project
 - Enjoy !
 
