@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+from sklearn.metrics.pairwise import cosine_similarity
 from tmdbv3api import Movie, TMDb
 import streamlit as st
 import pandas as pd
@@ -30,12 +30,24 @@ def title(nevigation):
 
 def create_sim():
     data = pd.read_csv('movie_data.csv')
+    data2 = pd.read_csv("movie_metadata.csv")
+
     # creating a count matrix
     cv = CountVectorizer(stop_words='english')
 
+    data['comb'] =  data['genres'] + ' ' + data['movie_title'] + ' ' + data['director_name'] +" "+ data['movie_title']
+    data['comb'] = data['comb'] + ' ' + data['actor_1_name'] + ' ' + data['actor_2_name']
+
+    # if data2['plot_keywords'] is nan then it will be equal to 'movie_title'
+    data2['plot_keywords'] = data2['plot_keywords'].fillna(data2['movie_title'])
+    data2['plot_keywords'] = data2['plot_keywords'].str.replace('|',' ')
+
+    data['comb'] = data['comb'] + ' ' + data2['plot_keywords']
+    data['comb'] = data['comb'].apply(lambda x: x.lower())
+
     count_matrix = cv.fit_transform(data['comb'])
     # creating a similarity score matrix
-    sim = linear_kernel(count_matrix, count_matrix)
+    sim = cosine_similarity(count_matrix, count_matrix)
     return data, sim
 
 
@@ -133,7 +145,7 @@ def recommend(m):
 
 def get_genre():
     genre = st.sidebar.selectbox("Select Genre", ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family",
-                "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Science Fiction", "TV Movie", "Thriller", "War", "Western"])
+                "Fantasy", "History", "Horror", "Music", "Mystery", "Romance", "Sci-Fi", "TV Movie", "Thriller", "War", "Western"])
     return genre
 
 
